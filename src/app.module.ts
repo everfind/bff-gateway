@@ -4,7 +4,7 @@ import { GraphQLGatewayModule } from '@nestjs/graphql';
 const graphqlGatewayModule = GraphQLGatewayModule.forRootAsync({
   useFactory: async () => ({
     server: {
-      path: '/bff/graphql',
+      path: '/graphql',
     },
     gateway: {
       serviceList: [
